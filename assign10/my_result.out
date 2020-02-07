@@ -1,0 +1,51 @@
+input is DA D2 D3 D4 D5 D6 D7 D8 D9 D10 DJ DQ DK
+ 
+face[0] = D suit[0] = A num[0]=1
+face[1] = D suit[1] = 2 num[1]=2
+face[2] = D suit[2] = 3 num[2]=3
+face[3] = D suit[3] = 4 num[3]=4
+face[4] = D suit[4] = 5 num[4]=5
+face[5] = D suit[5] = 6 num[5]=6
+face[6] = D suit[6] = 7 num[6]=7
+face[7] = D suit[7] = 8 num[7]=8
+face[8] = D suit[8] = 9 num[8]=9
+face[9] = D suit[9] = 10 num[9]=10
+face[10] = D suit[10] = J num[10]=11
+face[11] = D suit[11] = Q num[11]=12
+face[12] = D suit[12] = K num[12]=13
+---------------------------
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 1 1 1 1 1 1 1 1 1 1 1 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+----------------------------
+num 1 : 1
+num 2 : 1
+num 3 : 1
+num 4 : 1
+num 5 : 1
+num 6 : 1
+num 7 : 1
+num 8 : 1
+num 9 : 1
+num 10 : 1
+num 11 : 1
+num 12 : 1
+num 13 : 1
+flush 1 : 1
+flush 2 : 1
+flush 3 : 1
+flush 4 : 1
+flush 5 : 1
+flush 6 : 1
+flush 7 : 1
+flush 8 : 1
+flush 9 : 1
+flush 10 : 1
+flush 11 : 0
+flush 12 : 0
+flush 13 : 0
+Spades : 0
+Hearts : 0
+Diamonds : 13
+Clubs : 0

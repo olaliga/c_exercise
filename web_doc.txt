@@ -1,0 +1,1 @@
+If you want to use web space, ftp the web files to public_html and "chmod -R 755 public_html" to open web permission.

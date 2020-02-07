@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+#include <ctype.h>
+
+#define size 80 
+int validfcn(char *colors, const char valid[][size]);
+
+
+int main() {
+
+	char input[size];
+	fgets(input, size, stdin);
+	printf("input is %s\n", input);
+	
+	char letterarray[4];
+	int j=0;
+	for(int i=0; i<strlen(input); i++)
+	{
+		if(isupper(input[i]))
+		{	
+			letterarray[j]=input[i];
+			printf("letterarray[%d] is %c\n",j, letterarray[j]);
+			j++;
+		}
+	}
+
+	const char valid[12][size] = {"silver", "gold", "black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white" };
+
+/*	
+	char test[5] = "dick";
+
+	if(validfcn(test,valid)==1)
+	{printf("%s is valid. \n",test);}
+	else
+	{printf("%s is not valid. \n",test);}*/
+	
+
+	char *tokenPtr = strtok(input, "ABC"); // begin tokenizing sentence
+	char *color1 = tokenPtr;
+	tokenPtr = strtok(NULL, "ABC"); // get next token
+	char *color2 = tokenPtr;
+	tokenPtr = strtok(NULL, "ABC");
+	char *color3 = tokenPtr;
+
+
+	printf("color1 is %s\n", color1);
+	printf("color2 is %s\n", color2);
+	printf("color3 is %s\n", color3);
+
+
+/*
+	if(validfcn(color1,valid)==1)
+	{printf("%s is valid.\n",color1);}
+	else
+	{printf("%s is not valid.\n",color1);}
+	
+	if(validfcn(color2,valid)==1)
+	{printf("%s is valid.\n",color2);}
+	else
+	{printf("%s is not valid.\n",color2);}
+	
+	if(validfcn(color3,valid)==1)
+	{printf("%s is valid.\n",color3);}
+	else
+	{printf("%s is not valid.\n",color3);}
+*/	
+
+	return 0;
+}
+
+int validfcn(char *colors, const char valid[][size])
+{
+	for(int i=0; i<12; i++)
+	{	
+		if(strcmp(colors,valid[i])==0)
+		{
+			return 1;
+		}
+		valid++;
+	}
+	return 0;
+}
